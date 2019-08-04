@@ -66,3 +66,4 @@ typings/
 .cache
 package-lock.json
 /examples/basic/dist
+/test/assets/images

@@ -24,9 +24,9 @@ export class Audio {
 
     const sound = new Howl({
       src: [resolvedPath],
-      onloaderror: ((id, error) => {
+      onloaderror: (id, error) => {
         console.error(`Error while loading sound from ${resolvedPath}: ${error}`)
-      })
+      }
     })
     this.sounds[soundId] = sound
   }
@@ -36,4 +36,3 @@ export class Audio {
     sound.play()
   }
 }
-
