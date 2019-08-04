@@ -1,0 +1,28 @@
+{
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "json"
+  ],
+  "preset": "jest-puppeteer",
+  "testMatch": [
+    "<rootDir>/test/**/*.(spec|test).ts|tsx"
+  ],
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "reporters": [ "default" ],
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/node_modules/",
+    "<rootDir>/coverage/"
+  ],
+  "globals": {
+    "PATH": "http://localhost:1234",
+    "ts-jest": {
+      "diagnostics": false
+    }
+  },
+  "globalSetup": "jest-environment-puppeteer/setup",
+  "globalTeardown": "jest-environment-puppeteer/teardown",
+  "testEnvironment": "jest-environment-puppeteer"
+}

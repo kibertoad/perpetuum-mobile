@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+/examples/basic/package-lock.json
+/dist
+/dist-ts/
+.idea
+.cache
+package-lock.json
+/examples/basic/dist
