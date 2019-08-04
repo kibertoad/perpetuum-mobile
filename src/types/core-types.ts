@@ -1,8 +1,3 @@
-export type EntityPosition = {
-  x: number
-  y: number
-}
-
 export type DeepPartial<T> = {
   [P in keyof T]?: T[P] extends Array<infer U>
     ? Array<DeepPartial<U>>
