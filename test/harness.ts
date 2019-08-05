@@ -34,7 +34,7 @@ window.game.graphics.loader.loadSpritesheet('spritesheet.metadata', () => {
     y: 10
   })
 
-  const movementInterval = 5
+  const movementInterval = 3
   const movementDelta = 2
   const leftManager = newJobManager(window.game.input.events, Direction.Left, model, movementDelta, movementInterval)
   const rightManager = newJobManager(window.game.input.events, Direction.Right, model, movementDelta, movementInterval)
